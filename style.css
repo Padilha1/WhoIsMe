@@ -1,0 +1,495 @@
+:root {
+    --color-primary: #936ea3;
+    --color-secundary: #704c80;
+    --color-primary-light: #eed2fa;
+}
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* ================================
+*       HOME
+===================================*/
+
+.home {
+    position: relative;
+    background-image: url(../background7.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.home .header {
+    padding: 30px 0;
+}
+
+.home .header .nav {
+    display: flex;
+    justify-content: center;
+}
+
+.home .header .nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.home .header .nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}
+.home .header .nav ul li a{
+    color:  white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.home .header .nav ul li a:hover {
+    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.home .header .logo {
+    width: 150px;
+    margin: 0 50px;
+    border-radius: 50%;
+}
+
+@media (max-width: 700px) {
+    .header {
+        display: none;
+    }
+}
+
+/* ================================
+*       HOME - BANNER
+===================================*/
+
+.home .banner {
+    position:absolute;
+    left:50%;
+    top:50%;
+    height:250px;
+    width:650px;
+    margin-top: -100px;
+    margin-left: -325px;
+    color: white;
+    text-align: center;
+}
+
+.home .banner h1{
+    font-size: 75px;
+}
+
+.home .banner span {
+    display: block;
+}
+
+.home .banner .slogan1 {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+.home .banner .slogan2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* ==============================
+*             ABOUT 
+===============================*/
+
+.about {
+    background-color: var(--color-primary);
+}
+
+.about .container {
+    display: flex;
+}
+
+.about .timing {
+    position: relative;
+    top: -90px;
+    width: 33%;
+    padding:20px;
+    background-image: url(../background2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.about .timing .overlay {
+    background: rgba(0, 0,0, 0.7);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about .timing .icon_cut {
+    width: 100px;
+}
+
+.about .timing h3 {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--color-primary);
+    font-size: 30px;
+    margin: 0 auto 30px auto;
+}
+
+.about .timing .text {
+    margin: 10px 0;
+}
+.about .timing .text:after {
+    content: '•';
+    font-size: 20px;
+    display:block;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+
+.about .timing .text h4{
+    color: var(--color-primary-light);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.about .timing span{
+    color: white;
+    font-size: 14px;
+    display: block;
+}
+
+.about .experience {
+    width: 66%;
+    margin-left: 7%;
+    margin-top: 100px;
+    color: white;
+}
+
+.about .experience h2 {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.about .experience h2:after {
+    display: block;
+    content: '';
+    width: 200px;
+    height: 2px;
+    background-color: var(--color-secundary);
+    margin: 20px 0;
+}
+
+.about .experience .text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .experience .text p {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.about .experience .text .foto {
+    position: right bottom;
+
+    margin-left: 80px;
+    width:260px;
+}
+
+/* ==============================
+*             SKILLS  
+===============================*/
+.skill {
+    padding: 100px 0;
+    text-align: center;
+    background-color: var(--color-primary-light);
+    background-image: url(../zerotwo.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 350px;
+}
+
+.skill h2 {
+    color: var(--color-secundary);
+    font-weight: 400;
+    font-size: 55px;
+}
+
+.skill h2:after {
+    display: flex;
+    justify-content: center;
+    content: '❦';
+    color:var(--color-secundary);
+    margin-top: 0;
+}
+
+
+.skill .boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    
+}
+.skill .boxes .tools {
+    width: 90px;
+}
+
+.skill .box {
+    border: 3px solid var(--color-secundary);
+    padding: 40px 30px;
+    margin: 30px ;
+    width:500px;
+}
+
+.skill .box h4 {
+    color: var(--color-secundary);
+    margin-top: 20px;
+}
+
+.skill .box p {
+    margin-top:10px;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+.skill .box a {
+    text-decoration:solid ;
+}
+
+/* ==============================
+*             CONTATO
+===============================*/
+
+.contact {
+    background-color: var(--color-primary);
+    background-image: url(../OK.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 300px;
+    
+
+    height: 100vh;
+    padding: 100px 0;
+}
+
+
+.contact h2 {
+    text-align: center;
+    color: var(--color-primary-light);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+ /*
+ .contact img {
+    margin: 0 auto;
+    display: block;
+ */
+
+.contact h2:after {
+    display: flex;
+    justify-content: center;
+    content: '✧✧';
+    color: var(--color-primary-light);
+    margin-top: 0;
+}
+
+.contact form {
+    margin-top: 80px;
+} 
+
+.contact .personal-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.contact .input-wrapper {
+    width: 100%;
+    margin-right: 60px; 
+}
+
+.contact .input-wrapper:last-of-type {
+    margin-right: 0;
+}
+
+.contact  label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: var(--color-primary-light);
+}
+
+.contact .personal-data input,
+.contact textarea {
+    border-radius: 3px;
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+
+.contact textarea {
+    height: 120px;
+}
+
+.contact button {
+    background-color: var(--color-secundary);
+    color: white;
+    padding: 13px 30px;
+    border: none;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* ==============================
+*         FOTOS // 
+===============================*/
+
+.gallery {
+    background-color: var(--color-primary-light);
+    background-image: url(../shinobu.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 250px;
+    padding: 100px 0;
+}
+
+
+.gallery h2 {
+    text-align: center;
+    color: var(--color-secundary);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+ /*
+ .gallery img {
+    margin: 0 auto;
+    display: block;
+ */
+
+.gallery h2:after {
+    display: flex;
+    justify-content: center;
+    content: '❦';
+    color: var(--color-secundary);
+    margin-top: 0;
+}
+
+.gallery .container p {
+    text-align: center;
+}
+
+.gallery .gallery-wrapper {
+    display: flex;
+    margin: 50px auto;
+    flex-direction: column;
+    width: 900px;
+    height: 100vh;
+    flex-wrap: wrap;
+
+}
+
+.gallery .gallery-wrapper div {
+    border: 10px solid var(--color-primary);
+    margin: 6px;
+    width: 33%;
+}
+
+.gallery .gallery-wrapper div img {
+    width: 100%;
+}
+
+/* ==============================
+*           LOCALIZAÇÃO 
+===============================*/
+
+.location {
+    padding: 100px 0;
+    background-image: url(../KeyboardBG.jpg);
+    background-size: cover;
+}
+
+
+.location .head {
+    background-color: #191919;
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.location .head .info {
+    display: flex;
+    align-items: center;
+}
+
+.location .head .info .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 13px;
+    border: 1px solid var(--color-primary);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+.location .head .info .text span {
+    display: block;
+    font-size: 15px;
+}
+
+.location .head .info .text span:first-child {
+    color: silver;
+}
+
+.location .head .info .text span:last-child {
+    color: white;
+}
+
+.location .map {
+    width: 100%;
+}
+.location .map iframe {
+    width: 100%;
+}
+
+/* ==============================
+*             FOOTER
+===============================*/
+.footer {
+    text-align: center;
+    background-color: #191919;
+    color: white;
+    padding: 40px;
+    font-size: 15px;
+}
+
+
+
